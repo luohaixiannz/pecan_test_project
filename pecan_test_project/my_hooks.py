@@ -11,5 +11,5 @@ class SimpleHook(PecanHook):
     def after(self, state):
         print 'it is after exec'
 
-    def on_error(self, state):
+    def on_error(self, state, exc):
         print 'it is on error'
